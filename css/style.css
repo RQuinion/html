@@ -1,0 +1,74 @@
+.nav__button {
+  height: 25px;
+  width: 75px;
+  background-color: #0D6EFD;
+  border: black 1px solid;
+}
+
+.nav__logo {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  color: red;
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+.nav .nav__button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.nav .nav__logo {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+header {
+  height: 200px;
+  background-image: url("/images/eau.jpg");
+  background-size: cover;
+  position: relative;
+}
+header .header__h1 {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  top: 10px;
+}
+header .header__mail {
+  position: absolute;
+  left: 5%;
+  bottom: 20%;
+  max-width: 50%;
+}
+header .header__button {
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+  background-color: #0D6EFD;
+  border: black 1px solid;
+  font-style: oblique;
+  max-width: 20%;
+}
+
+.body .body__lorem {
+  text-align: center;
+}
+.body .body__lorem .body__lorem--puzzle {
+  margin-top: 10px;
+}
+.body .body__lorem .body__lorem--titre {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+.body .body__lorem .body__lorem--p {
+  font-size: small;
+}
+
+/*# sourceMappingURL=style.css.map */

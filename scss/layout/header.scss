@@ -1,0 +1,28 @@
+header {
+    height: 200px;
+    background-image: url("/images/eau.jpg");
+    background-size: cover;
+    position: relative;
+    .header__h1 {
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        top: 10px;
+        }
+    .header__mail {
+        position: absolute;
+        left: 5%;
+        bottom: 20%;
+        max-width: 50%;
+    }
+    .header__button {
+        position: absolute;
+        right: 5%;
+        bottom: 20%;
+        background-color: #0D6EFD;
+        border: black 1px solid;
+        font-style: oblique;
+        max-width: 20%;
+    }
+}
