@@ -1,15 +1,23 @@
+body {
+    background-color: #bfc8d9;
+    margin: 0px;
+}
 .body {
-    .body__lorem {
-        text-align: center;
-        .body__lorem--puzzle {
+    margin-top: 20px;
+    &__lorem {
+
+        &--puzzle {
             margin-top: 10px;
+            border-radius: 20%;
+            opacity: 50%;
         }
-        .body__lorem--titre {
+        &--titre {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: large;
+            font-size: 30px;
+            margin: 10px 0px 10px 0px;
         }
-        .body__lorem--p {
-            font-size: small;
+        &--p {
+            padding: 10px 30px 10px 30px;
         }
     }
 }

@@ -1,0 +1,29 @@
+.foot {
+    background-color: #dbe0e9;
+    border-radius: 10%;
+    margin: 30px;
+    border: 1px black solid;
+    &__title {
+        margin: 5px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        color: #659aeb;
+    }
+    &__form {
+        text-align: center;
+        &--mess {
+            &--txt {
+                max-width: 200px;
+                max-height: 100px;
+            }
+        }
+        &--button { 
+            background-color:#659aeb;
+            margin-bottom: 10px;
+        }
+    }
+}
+.footer {
+    font-style: italic;
+    font-size: 10px;
+}

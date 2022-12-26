@@ -15,38 +15,42 @@
     </nav>
     <header class="header">
         <h1 class="header__h1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
-        <input type="email" placeholder="Email" class="header__mail">
-        <input type="button" value="Submit" class="header__button">
-    </header>
+        <div class="header_mail">
+            <input type="email" placeholder="Email" class="header__mail--mail">
+            <input type="button" value="Submit" class="header__mail--button">
+        </div>
+        </header>
     <div class="body">
-        <article class="body__lorem">
+        <div class="body__lorem">
+            <img src="images/puzzle.png" alt="puzzle" class="body__lorem--puzzle">
+            <div class="body__lorem--titre"><h3>Lorem Ipsum</h3></div>
+            <div class="body__lorem--p"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        </div>
+        <div class="body__lorem">
             <img src="images/puzzle.png" alt="puzzle" class="body__lorem--puzzle">
             <h3 class="body__lorem--titre">Lorem Ipsum</h3>
             <p class="body__lorem--p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </article>
-        <article class="body__lorem">
+        </div>
+        <div class="body__lorem">
             <img src="images/puzzle.png" alt="puzzle" class="body__lorem--puzzle">
             <h3 class="body__lorem--titre">Lorem Ipsum</h3>
             <p class="body__lorem--p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </article>
-        <article class="body__lorem">
-            <img src="images/puzzle.png" alt="puzzle" class="body__lorem--puzzle">
-            <h3 class="body__lorem--titre">Lorem Ipsum</h3>
-            <p class="body__lorem--p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </article>
+        </div>
     </div>
-    <section>
-        <h3>Contact us</h3>
-        <form action="liste.php">
-            <div><input type="text" placeholder="First Name">
-             <input type="text" placeholder="Last Name"></div>
-            <div><input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone NUmber"></div>
-            <div><input type="text" placeholder="Type your message">
-            <input type="button" value="Submit"></div>
+    <hr>
+    <section class="foot">
+        <h2 class="foot__title">Contact us</h2>
+        <form action="liste.php" class="foot__form">
+            <div class="foot__form--name"><input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name"></div>
+            <div class="foot__form--contact"><input type="text" placeholder="Email">
+            <input type="text" placeholder="Phone Number"></div>
+            <div class="foot__form--mess"><textarea class="foot__form--mess--txt" name="message" placeholder="Type your message"></textarea></div>
+            <div><input class="foot__form--button" type="button" value="Submit"></div>
         </form>
     </section>
-    <footer>
+    <footer class="footer">
         <p>About - Contact - Terms of use - Privacy Policy</p>
         <p>My website 2022 - All rights reserved</p>
     </footer>
