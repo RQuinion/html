@@ -13,25 +13,60 @@
         }
     &__mail {
         display: flex;
+        height: 50px;
         &--mail {
             position: absolute;
-            left: 15%;
+            left: 5%;
             bottom: 10%;
-            max-width: 50%;
         }
         &--button {
             position: absolute;
-            right: 15%;
+            right: 10%;
             bottom: 10%;
             background-color: #659aeb;
             border: black 1px solid;
             font-style: oblique;
-            max-width: 30%;
         }
-        }
+}
 }
 @media screen and (min-width: 481px) {
     .header {
         display: flex;
+        &__mail {
+            &--mail {
+                bottom: 50px;
+                left: 10%;
+            }
+            &--button {
+                bottom: 10px;
+                left: 10%;
+            }
+        }
+        &__h1{
+            text-align: center;
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .header {
+        display: flex;
+        justify-content:end;
+        &__mail {
+            top: 50px;
+            &--mail {
+                bottom: 110px;
+                left: 10%;
+            }
+            &--button {
+                bottom: 80px;
+                left: 10%;
+            }
+      }
+        &__h1 {
+            max-width: 40%;
+            top: 30px;
+            font-size: 25px;
+            font-weight: bold;
+        }
     }
 }

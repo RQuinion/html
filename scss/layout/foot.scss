@@ -1,4 +1,5 @@
 .foot {
+    max-height: 200px;
     background-color: #dbe0e9;
     border-radius: 10%;
     margin: 30px;
@@ -14,7 +15,7 @@
         &--mess {
             &--txt {
                 max-width: 200px;
-                max-height: 100px;
+                max-height: 40px;
             }
         }
         &--button { 
@@ -26,4 +27,25 @@
 .footer {
     font-style: italic;
     font-size: 10px;
+}
+@media screen and (min-width: 481px) {
+    .foot {
+        margin: auto;
+        max-width: 500px;
+        height: 180px;  
+        border-radius: 20%;
+        &__form {
+            &--mess {
+                &--txt {
+                    max-width: 420px;
+                    max-height: 50px;
+                }
+            }
+        }
+    }
+    .footer {
+        font-style: italic;
+        font-size: 15px;
+        color: white
+    }
 }
