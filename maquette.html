@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquette</title>
-    <link rel="stylesheet" href="scss/main.scss">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -40,18 +39,32 @@
     <hr>
     <section class="foot">
         <h2 class="foot__title">Contact us</h2>
-        <form action="liste.php" class="foot__form">
-            <div class="foot__form--name"><input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name"></div>
-            <div class="foot__form--contact"><input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone Number"></div>
-            <div class="foot__form--mess"><textarea class="foot__form--mess--txt" name="message" placeholder="Type your message"></textarea></div>
-            <div><input class="foot__form--button" type="button" value="Submit"></div>
+        <form class="foot__form" id="contactForm">
+            <div class="foot__form--name">
+                <input type="text" id='firstName' name="firstName" placeholder="First Name">
+                <label class="error-message" for="firstName" id="firstNameError">Veuillez renseigner un prénom.</label>
+                <input type="text" id='lastName' placeholder="Last Name">
+                <label class="error-message" for="lastName" id="lastNameError">Veuillez renseigner votre nom.</label>
+            </div>
+            <div class="foot__form--contact">
+                <input type="text" id='email' placeholder="Email">
+                <label class="error-message" for="email" id="emailError">Veuillez renseigner votre mail.</label>
+                <input type="text" id='phone' placeholder="Phone Number">
+                <label class="error-message" for="phone" id="phoneError">Veuillez renseigner votre numéro.</label>
+            </div>
+            <div class="foot__form--mess">
+                <textarea class="foot__form--mess--txt" name="message" id='message' placeholder="Type your message"></textarea>
+                <label class="error-message" for="message" id="messageError">Veuillez renseigner votre message.</label>
+            </div>
+            <div>
+                <input class="foot__form--button" type="submit" id='submit' value="Submit">
+            </div>
         </form>
     </section>
     <footer class="footer">
         <p>About - Contact - Terms of use - Privacy Policy</p>
         <p>My website 2022 - All rights reserved</p>
     </footer>
+    <script src="./app.js"></script>
 </body>
 </html>

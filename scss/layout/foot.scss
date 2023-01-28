@@ -1,8 +1,14 @@
+.error-message {
+    display: none;
+    color: rgb(199, 0, 0);
+    font-family: sans-serif;
+    font-size: 14px;
+}
 .foot {
     max-height: 200px;
     background-color: #dbe0e9;
     border-radius: 10%;
-    margin: 30px;
+    margin: auto;
     border: 1px black solid;
     &__title {
         margin: 5px;
@@ -11,6 +17,8 @@
         color: #659aeb;
     }
     &__form {
+        display: flex;
+        flex-direction: column;
         text-align: center;
         &--mess {
             &--txt {
@@ -47,5 +55,10 @@
         font-style: italic;
         font-size: 15px;
         color: white
+    }
+}
+@media screen and (min-width: 769px) {
+    .foot, footer {
+        margin-top: 80px;
     }
 }
