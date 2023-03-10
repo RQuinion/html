@@ -21,6 +21,16 @@ body {
         }
     }
 }
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__image {
+        max-height: 200px;
+        max-width: 300px;
+    }
+}
+
 @media screen and (min-width: 481px) {
     body {
         background-image: url("/images/eau.jpg");

@@ -140,6 +140,16 @@ body {
   padding: 10px 30px 10px 30px;
 }
 
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel__image {
+  max-height: 200px;
+  max-width: 300px;
+}
+
 @media screen and (min-width: 481px) {
   body {
     background-image: url("/images/eau.jpg");

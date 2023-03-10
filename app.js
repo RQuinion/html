@@ -79,3 +79,51 @@ contactForm.addEventListener('submit',(event) => {
     }
 })
 
+class Carrousel {
+    constructor(images, htmlId) {
+        this.images = images;
+        this.htmlId = htmlId;
+        this.carrouselImageContainer = document.getElementById(htmlId);
+        this.indexActuel = 0;
+        this.carouselElement = document.createElement('img'); 
+        this.display();
+    }
+    display = () => {
+        this.carouselElement.setAttribute('alt', "Alternative text");
+        this.carouselElement.setAttribute('src', this.images[this.indexActuel]);
+        this.carouselElement.setAttribute('class', "carousel__image" );
+
+        this.carrouselImageContainer.appendChild(this.carouselElement);
+    }
+    suivant = () => {
+        if (!this.images[this.indexActuel + 1]) {
+            this.indexActuel = 0;
+        } else {
+            this.indexActuel += 1;
+        }
+        this.display()
+    }
+    precedent = () => {
+        
+        if (!this.images[this.indexActuel - 1]) {
+            this.indexActuel = this.images.length - 1;
+        } else {
+            this.indexActuel -= 1;
+        }
+        this.display()
+    }
+}
+
+const imagesArray = ["https://cdn.pixabay.com/photo/2018/09/03/23/56/sea-3652697_960_720.jpg","https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_960_720.jpg" ,"https://cdn.pixabay.com/photo/2010/12/13/10/09/nature-2384_960_720.jpg" ]
+const carrousel1 = new Carrousel(imagesArray, "carouselContent")
+
+const previousArrow = document.getElementById('arrowLeft');
+const nextArrow = document.getElementById('arrowRight');
+
+
+previousArrow.addEventListener('click', () => carrousel1.precedent())
+nextArrow.addEventListener('click', () => carrousel1.suivant())
+
+setInterval(() => {
+    carrousel1.suivant()
+}, 5000);
